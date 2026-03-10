@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Rhee | Design Student & Creative Strategist</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="card-icon">♦</span> Amanda Rhee
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta-btn">Get In Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Design Student
+                    <br />
+                    <span class="highlight">Creative Strategist</span>
+                </h1>
+                <div class="motto">Jack of All Trades</div>
+                <p class="hero-subtitle">
+                    I'm Amanda, a design student passionate about creating immersive brand experiences, stunning visual narratives, and human-centered design solutions. From logo design to merchandising, from strategic branding to abstract art—I do it all.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Collaborate</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/amanda-rhee.jpg" alt="Amanda Rhee" class="hero-photo" />
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓ Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <p class="section-subtitle">
+                A collection of design projects, artworks, and strategic initiatives
+            </p>
+
+            <!-- Toggle Buttons -->
+            <div class="work-controls">
+                <button class="toggle-btn active" data-filter="all">All Work</button>
+                <button class="toggle-btn" data-filter="projects">Projects</button>
+                <button class="toggle-btn" data-filter="jobs">Experience</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PROJECT 1: Loreal Brandstorm -->
+                <article class="project-card" data-category="projects">
+                    <div class="project-image">
+                        <div class="placeholder-strategy">
+                            <h3>L'Oréal Brandstorm</h3>
+                            <p>Immersive Experience Design</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Brand Strategy</span>
+                        <h3>Multiverse Branding</h3>
+                        <p>
+                            Conceptualized and designed a comprehensive brand identity for L'Oréal's Brandstorm innovation challenge, creating an immersive narrative around the "multiverse" concept. Handled all branding elements including logo design and brand storytelling.
+                        </p>
+                        <div class="project-meta">
+                            <span>Brand Strategy</span>
+                            <span>Logo Design</span>
+                            <span>Storytelling</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'loreal')">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: Headphone Drawings -->
+                <article class="project-card" data-category="projects">
+                    <div class="project-image">
+                        <div class="placeholder-design">
+                            <h3>Headphone Drawings</h3>
+                            <p>Abstract Art & Design Principles</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Artwork</span>
+                        <h3>Design Principles in Abstract</h3>
+                        <p>
+                            Created an abstract illustration of Bose headphones demonstrating sophisticated understanding of design principles. This piece showcases my technical drawing skills and conceptual approach to representing objects.
+                        </p>
+                        <div class="project-meta">
+                            <span>Technical Drawing</span>
+                            <span>Abstract Design</span>
+                            <span>Digital Art</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'headphones')">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: KASA Merch Design -->
+                <article class="project-card" data-category="projects">
+                    <div class="project-image">
+                        <div class="placeholder-merch">
+                            <h3>KASA Merch Design</h3>
+                            <p>Contest Winner • 20+ Sales</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Graphic Design</span>
+                        <h3>Korean Culture Merch</h3>
+                        <p>
+                            Won a design contest with a merchandise design celebrating Korean culture, specifically featuring the norigae—a traditional Korean ornament rooted in historic cultural patterns. Over 20 people purchased this design.
+                        </p>
+                        <div class="project-meta">
+                            <span>Graphic Design</span>
+                            <span>Cultural Design</span>
+                            <span>Contest Winner</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'kasa')">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4: BYNANO Skincare -->
+                <article class="project-card" data-category="jobs">
+                    <div class="project-image">
+                        <div class="placeholder-startup">
+                            <h3>BYNANO Skincare</h3>
+                            <p>Brand Identity • Packaging Design</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Branding</span>
+                        <h3>Korean Skincare Startup</h3>
+                        <p>
+                            Designed the complete visual identity and packaging for BYNANO, a Korean skincare startup. Created logo, brand guidelines, and product packaging that captures the brand's premium positioning and innovation in skincare.
+                        </p>
+                        <div class="project-meta">
+                            <span>Logo Design</span>
+                            <span>Packaging</span>
+                            <span>Brand Strategy</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'bynano')">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- JOB 1: Brand Strategist & Creative Director -->
+                <article class="project-card" data-category="jobs">
+                    <div class="project-image">
+                        <div class="placeholder-strategy">
+                            <h3>Brand Strategist & Creative Director</h3>
+                            <p>L'Oréal Brandstorm Competition</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Experience</span>
+                        <h3>Strategy & Creative Direction</h3>
+                        <p>
+                            Led strategic branding initiatives and creative direction for the L'Oréal Brandstorm challenge. Focused on immersive experience design, creating cohesive brand narratives, and developing comprehensive visual identities.
+                        </p>
+                        <div class="project-meta">
+                            <span>Brand Strategy</span>
+                            <span>Creative Direction</span>
+                            <span>Leadership</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'role-director')">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- JOB 2: Research & User Experience -->
+                <article class="project-card" data-category="jobs">
+                    <div class="project-image">
+                        <div class="placeholder-research">
+                            <h3>Research & User Experience</h3>
+                            <p>Academic & Applied Research</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Experience</span>
+                        <h3>User-Centered Research</h3>
+                        <p>
+                            Conducted rigorous research studies with diverse participant groups, analyzing behavioral patterns and translating findings into actionable design insights. Applied research methodologies to improve user experiences across multiple domains.
+                        </p>
+                        <div class="project-meta">
+                            <span>User Research</span>
+                            <span>Data Analysis</span>
+                            <span>Design Thinking</span>
+                        </div>
+                        <a href="#" class="read-more card-link" onclick="openCardModal(event, 'role-research')">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Tools and capabilities that bring ideas to life</p>
+            <div class="skills-grid">
+                <div class="skill-block">
+                    <h4>Design & Prototyping</h4>
+                    <ul>
+                        <li>Figma & UI/UX Design</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Sketch</li>
+                        <li>Wireframing & Mockups</li>
+                        <li>Prototyping & Testing</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h4>Visual & Graphic Design</h4>
+                    <ul>
+                        <li>Logo Design</li>
+                        <li>Branding & Identity</li>
+                        <li>Illustration & Digital Art</li>
+                        <li>Packaging Design</li>
+                        <li>Print & Web Design</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h4>Strategy & Leadership</h4>
+                    <ul>
+                        <li>Brand Strategy</li>
+                        <li>Creative Direction</li>
+                        <li>Stakeholder Engagement</li>
+                        <li>Project Management</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h4>Research & Analysis</h4>
+                    <ul>
+                        <li>User Research & Testing</li>
+                        <li>Market Analysis</li>
+                        <li>Qualitative Methods</li>
+                        <li>Data Visualization</li>
+                        <li>Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a design student pursuing my passion for creating meaningful visual experiences and strategic brand narratives. With a background that spans design, creative strategy, research, and art, I bring a versatile and innovative approach to every project.
+                    </p>
+                    <p>
+                        Whether I'm conceptualizing brand identities, designing stunning merchandise, creating abstract illustrations, or solving complex design challenges, I'm driven by the pursuit of excellence and the desire to make an impact. I believe every design tells a story, and I'm here to tell yours.
+                    </p>
+                    <p>
+                        My philosophy: be the jack of all trades, master of the craft. I thrive on learning, experimenting, and pushing creative boundaries. I'm excited to collaborate on projects that challenge me to grow and create work that resonates.
+                    </p>
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <span class="meta-number">10+</span>
+                            <span class="meta-label">Design Projects</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-number">3</span>
+                            <span class="meta-label">Years Experience</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-number">1</span>
+                            <span class="meta-label">Jack of All Trades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="card-accent">
+                        <div class="hearts-pattern">
+                            ♦
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Work Together</h2>
+                <p>
+                    I'm always excited about new design challenges, creative collaborations, and opportunities to bring ideas to life. Let's connect and create something amazing together.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:ayrhee025@gmail.com" class="contact-link">
+                        <span>Email</span>
+                        ayrhee025@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/amandayrhee025/" target="_blank" class="contact-link">
+                        <span>LinkedIn</span>
+                        linkedin.com/in/amandayrhee025
+                    </a>
+                    <a href="tel:+12623446242" class="contact-link">
+                        <span>Phone</span>
+                        (262) 344-6242
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Amanda Rhee. Designed with passion and creativity. ♦</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Card Details -->
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCardModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
