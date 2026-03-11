@@ -19,22 +19,24 @@
         }
         .case-study h1 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-maroon);
+            color: var(--light-text);
             font-size: 2.5rem;
             margin-bottom: 1rem;
             margin-top: 2rem;
+            text-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
         }
         .case-study h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-maroon);
+            color: var(--cyan);
             font-size: 1.8rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid var(--gold);
+            border-bottom: 2px solid var(--primary-magenta);
             padding-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
         }
         .case-study p, .case-study li {
-            color: #555;
+            color: var(--text-muted);
             line-height: 1.8;
             font-size: 1rem;
             margin-bottom: 1rem;
@@ -49,14 +51,17 @@
         .back-button {
             display: inline-block;
             margin-bottom: 2rem;
-            color: var(--primary-maroon);
+            color: var(--cyan);
             text-decoration: none;
             font-weight: 600;
-            border-bottom: 2px solid var(--primary-maroon);
+            border-bottom: 2px solid var(--cyan);
+            transition: 0.3s ease;
+            text-shadow: 0 0 5px rgba(0, 217, 255, 0.3);
         }
         .back-button:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
+            color: var(--primary-magenta);
+            border-bottom-color: var(--primary-magenta);
+            text-shadow: 0 0 15px rgba(255, 0, 110, 0.5);
         }
     </style>
 </head>
@@ -77,6 +82,11 @@
 
     <div class="case-study">
         <a href="index.html#work" class="back-button">← Back to Work</a>
+
+        <!-- Hero Image -->
+        <div class="case-study-hero placeholder">
+            <strong>Add case study hero image here</strong>
+        </div>
 
         <h1>KASA Merch Design: Korean Culture Celebration</h1>
         <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Graphic Design | Contest Winner | 20+ Sales</p>
@@ -214,6 +224,28 @@
         <p style="margin-top: 2rem;">
             This project is a testament to the power of design that combines cultural respect, creative innovation, and technical excellence. It proves that design can celebrate heritage while remaining contemporary and commercially viable.
         </p>
+
+        <!-- Image Gallery -->
+        <div class="gallery-section">
+            <h3>Merch Design & Product Variations</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item placeholder" data-label="T-Shirt Design">
+                    👕
+                </div>
+                <div class="gallery-item placeholder" data-label="Hoodie Mockup">
+                    🧥
+                </div>
+                <div class="gallery-item placeholder" data-label="Design Variations">
+                    🎨
+                </div>
+                <div class="gallery-item placeholder" data-label="Final Product">
+                    📦
+                </div>
+            </div>
+            <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">
+                💡 <strong>Upload your images:</strong> Replace the placeholder divs with &lt;img src="path/to/image.jpg" alt="description"&gt; tags to display your design work.
+            </p>
+        </div>
     </div>
 
     <footer class="footer">

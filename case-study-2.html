@@ -19,22 +19,24 @@
         }
         .case-study h1 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-maroon);
+            color: var(--light-text);
             font-size: 2.5rem;
             margin-bottom: 1rem;
             margin-top: 2rem;
+            text-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
         }
         .case-study h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary-maroon);
+            color: var(--cyan);
             font-size: 1.8rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid var(--gold);
+            border-bottom: 2px solid var(--primary-magenta);
             padding-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
         }
         .case-study p, .case-study li {
-            color: #555;
+            color: var(--text-muted);
             line-height: 1.8;
             font-size: 1rem;
             margin-bottom: 1rem;
@@ -49,14 +51,17 @@
         .back-button {
             display: inline-block;
             margin-bottom: 2rem;
-            color: var(--primary-maroon);
+            color: var(--cyan);
             text-decoration: none;
             font-weight: 600;
-            border-bottom: 2px solid var(--primary-maroon);
+            border-bottom: 2px solid var(--cyan);
+            transition: 0.3s ease;
+            text-shadow: 0 0 5px rgba(0, 217, 255, 0.3);
         }
         .back-button:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
+            color: var(--primary-magenta);
+            border-bottom-color: var(--primary-magenta);
+            text-shadow: 0 0 15px rgba(255, 0, 110, 0.5);
         }
     </style>
 </head>
@@ -77,6 +82,11 @@
 
     <div class="case-study">
         <a href="index.html#work" class="back-button">← Back to Work</a>
+
+        <!-- Hero Image -->
+        <div class="case-study-hero placeholder">
+            <strong>Add case study hero image here</strong>
+        </div>
 
         <h1>Headphone Drawings: Design Principles in Abstract</h1>
         <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Digital Illustration | Technical Drawing | Abstract Art</p>
@@ -103,7 +113,7 @@
 
         <h2>Design Approach</h2>
 
-        <h3 style="color: #A52A2A; margin-top: 1.5rem; margin-bottom: 0.8rem;">Concept Development</h3>
+        <h3 style="color: var(--primary-navy); margin-top: 1.5rem; margin-bottom: 0.8rem;">Concept Development</h3>
         <p>
             I selected Bose headphones as the subject because of their distinctive, ergonomic form and the challenge of translating 3D industrial design into 2D abstraction. The headphones presented an opportunity to explore:
         </p>
@@ -114,7 +124,7 @@
             <li>How to suggest dimensionality in a flat medium</li>
         </ul>
 
-        <h3 style="color: #A52A2A; margin-top: 1.5rem; margin-bottom: 0.8rem;">Design Principles Applied</h3>
+        <h3 style="color: var(--primary-navy); margin-top: 1.5rem; margin-bottom: 0.8rem;">Design Principles Applied</h3>
         <ul>
             <li><strong>Balance:</strong> Symmetrical composition with careful distribution of visual weight</li>
             <li><strong>Emphasis:</strong> Selective highlighting of key features that define the headphones</li>
@@ -125,7 +135,7 @@
             <li><strong>Emphasis Through Abstraction:</strong> Strategic removal of details to direct attention to essential forms</li>
         </ul>
 
-        <h3 style="color: #A52A2A; margin-top: 1.5rem; margin-bottom: 0.8rem;">Technical Execution</h3>
+        <h3 style="color: var(--primary-navy); margin-top: 1.5rem; margin-bottom: 0.8rem;">Technical Execution</h3>
         <p>
             Created digitally using professional design software, the illustration demonstrates:
         </p>
@@ -139,7 +149,7 @@
 
         <h2>Design Principles Deep Dive</h2>
 
-        <h3 style="color: #A52A2A; margin-top: 1.5rem; margin-bottom: 0.8rem;">Abstraction as Communication</h3>
+        <h3 style="color: var(--primary-navy); margin-top: 1.5rem; margin-bottom: 0.8rem;">Abstraction as Communication</h3>
         <p>
             The key challenge of this project was maintaining the "headphoneness" of the subject while creating meaningful abstraction. Rather than being purely decorative, every element in the composition serves a purpose—to communicate something about the object's essential nature.
         </p>
@@ -182,6 +192,28 @@
             <li>Every visual choice should serve the overall concept and communication goal</li>
             <li>The most compelling work challenges viewers while remaining accessible</li>
         </ul>
+
+        <!-- Image Gallery -->
+        <div class="gallery-section">
+            <h3>Design Process & Final Illustrations</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item placeholder" data-label="Initial Sketches">
+                    ✏️
+                </div>
+                <div class="gallery-item placeholder" data-label="Final Illustration">
+                    🎨
+                </div>
+                <div class="gallery-item placeholder" data-label="Detail Work">
+                    🔍
+                </div>
+                <div class="gallery-item placeholder" data-label="Alternate Concepts">
+                    💡
+                </div>
+            </div>
+            <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">
+                💡 <strong>Upload your images:</strong> Replace the placeholder divs with &lt;img src="path/to/image.jpg" alt="description"&gt; tags to display your design work.
+            </p>
+        </div>
     </div>
 
     <footer class="footer">
